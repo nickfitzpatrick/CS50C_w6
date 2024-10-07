@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CS50C Week 6 - Nick Fitzpatrick</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- MUST LOAD jQuery JavaScript file to use the shared library and $ function -->
+    <!-- 1. to use jQuery UI, first we must load the main jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- 2. now we can load the jQuery UI javascript file -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+    <!-- 3. we must load at least one jquery ui theme css file -->
+    <link href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" rel="stylesheet">
+    <style>
+        span {
+          display:inline-block;
+          padding:20px;
+          margin:10px;
+          background-color:blue;
+          color:#fff;
+          border-radius: 15px;
+        }
+        #question {
+          width:70%;
+          padding:40px 20px;
+          background-color:orange;
+          color:#fff;
+          border-radius: 15px;
+        }
+      </style>
+  </head>
+  <body>
+    <h1>Architecture Quiz</h1>
+    <h2 id="end"></h2>
+    <h4 id="counter"></h4>
+    <h4 id="points"></h4>
+    <div id="progress"></div>
+    <h3 id="question"></h3>
+    <div id="answers"></div>
+    <div id="questionImage"></div>
+    <script src="quiz.js"></script>
+  </body>
+</html>
